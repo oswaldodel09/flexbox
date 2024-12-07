@@ -1,0 +1,72 @@
+*:after
+*:before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+main{
+flex-grow: 1;
+}
+
+.titulares{
+    padding: 1rem;
+    background-color: #222;
+    color: #eee;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.menu ul{
+    list-style-type: none;
+}
+
+.hero-image{
+    min-height: 100vh;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/278/56/881/sea-otter-monterey-california-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 75);
+    color: #fff;
+}
+
+.hero-image div{
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+.hero-image h1{
+    font-size: 5vw;
+}
+
+
+@media (min-width: 768px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+  .menu ul{
+    display: flex;
+  }  
+}
+
+.menu li{
+    padding: 1rem
+}
